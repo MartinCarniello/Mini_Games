@@ -38,10 +38,7 @@ gem 'nokogiri'
 
 gem 'watir-webdriver'
 
-group :production, :staging do
-  gem 'pg'
-  gem 'rails_12factor'
-end
+gem 'rails_12factor', group: :production
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
