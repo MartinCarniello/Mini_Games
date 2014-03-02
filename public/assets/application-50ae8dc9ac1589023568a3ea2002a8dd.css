@@ -1,0 +1,190 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+ */
+
+
+body {
+    background: url('/assets/background_index.jpg') center center fixed no-repeat;
+    background-size: cover;
+}
+.logo {
+  background-color: black;
+  color: white;
+  width: 150px;
+  border-radius: 15px;
+  position: fixed;
+  top: 50%;
+  text-align: center;
+  -webkit-transform: rotate(270deg);
+  margin-left: 1%; }
+
+.main-container {
+  margin-right: 180px;
+  margin-left: 180px;
+  background-color: #143A5F;
+  border-radius: 16px;
+  border-style: groove;
+  border-color: grey;
+  box-shadow: 0px 0px 50px #090909;
+  margin-top: -9px;
+  margin-bottom: -9px;
+  height: 100%; }
+
+header img {
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px; }
+
+.nav {
+  background-color: #0a1223;
+  box-shadow: 0px 5px 10px rgba(9, 9, 9, 0.72);
+  margin-top: -21px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  height: 90px; }
+
+.navbar {
+  list-style: none;
+  padding-top: 67px;
+  text-align: center; }
+
+.navbar li {
+  display: inline;
+  margin: 0 45px 45px 0;
+  font: 16px arial,helvetica,sans-serif; }
+
+.nav ul li a {
+  text-decoration: none;
+  color: #143A5F; }
+
+.nav ul li a:hover {
+  text-decoration: none; }
+
+.advertising {
+  background-color: black;
+  color: white;
+  margin: 0px 50px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 10px 10px 5px #090909; }
+
+.games {
+  margin: 0px 50px;
+  width: 90%; }
+
+.game {
+  display: inline;
+  margin: 3px;
+  padding: -12px;
+  width: 20%; }
+
+.game-up-ad img {
+  width: 10%;
+  height: 90px;
+  border-style: groove;
+  border-radius: 15px;
+  border-color: black;
+  box-shadow: 10px 10px 5px #090909;
+  transition-property: bottom, border;
+  transition-duration: 0.2s, 0.5s; }
+
+.game img:hover {
+  border-color: white;
+  position: relative;
+  bottom: 3px; }
+
+.games-near-ad {
+  margin-left: 23%;
+  position: relative;
+  top: -13px;
+  width: 70%; }
+
+.games-near-ad img {
+  width: 13.7%;
+  height: 90px;
+  border-style: groove;
+  border-radius: 15px;
+  border-color: black;
+  box-shadow: 10px 10px 5px #090909;
+  transition-property: bottom, border;
+  transition-duration: 0.2s, 0.5s; }
+
+.game-advertising {
+  position: relative;
+  top: -13px;
+  left: 44px;
+  width: 21%;
+  height: 37%;
+  float: left;
+  background-color: black;
+  border-radius: 15px;
+  box-shadow: 10px 10px 5px #090909; }
+
+.game-advertising h3 {
+  color: white;
+  text-align: center; }
+
+.breadcrumb {
+  text-align: center; }
+
+.breadcrumb ul {
+  display: inline-block;
+  padding: 10px; }
+
+.breadcrumb ul li {
+  display: inline;
+  margin: auto 1px; }
+
+.arrow {
+  display: inline-block;
+  background: -webkit-linear-gradient(top, #fac695 0%, #f5ab66 47%, #ef8d31 100%);
+  width: 35px;
+  height: 30px;
+  text-align: center;
+  border-style: double;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #090909; }
+
+.arrow:hover {
+  background: -webkit-linear-gradient(top, #ef8d31 0%, #f5ab66 47%, #fac695 100%); }
+
+.breadcrumb-btn-outside {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.65);
+  background-color: rgba(128, 128, 128, 0.33);
+  box-shadow: 5px 5px 3px #090909;
+  transition: background-color 0.5s; }
+
+.breadcrumb-btn-outside:hover {
+  border-color: black;
+  background-color: rgba(12, 12, 12, 0.53); }
+
+.breadcrumb-btn-active {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  background: -webkit-linear-gradient(top, #d74c19 50%, #bf3601 51%); }
+
+footer {
+  margin-bottom: -25px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  text-align: center;
+  color: white;
+  background-color: #0a1223;
+  box-shadow: 0px -5px 10px rgba(9, 9, 9, 0.72); }
