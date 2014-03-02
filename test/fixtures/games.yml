@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyText
+  category: MyText
+  description: MyText
+  plays_quantity: 1
+  comments: MyText
+  rating: MyText
+
+two:
+  name: MyText
+  category: MyText
+  description: MyText
+  plays_quantity: 1
+  comments: MyText
+  rating: MyText

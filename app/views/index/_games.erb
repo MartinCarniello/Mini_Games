@@ -1,0 +1,36 @@
+<% if @games.size < 36 %>
+    <div class="game-up-ad">
+        <ul>
+          <% (0..@games.size - 1).to_a.each do |i|%>
+              <li class="game">
+                <a href="/game/index?game_name=<%= @games[i].name %>"><img src="/assets/<%= @games[i].name %>.jpg" alt=""></a>
+              </li>
+          <% end %>
+        </ul>
+    </div>
+<% else %>
+    <div class="game-up-ad">
+        <ul>
+            <% (0..23).to_a.each do |i|%>
+                <li class="game">
+                  <a href="/game/index?game_name=<%= @games[i].name %>"><img src="/assets/<%= @games[i].name %>.jpg" alt=""></a>
+                </li>
+            <% end %>
+        </ul>
+    </div>
+
+    <div class="game-advertising">
+      <h3>AD</h3>
+      <h3>VER</h3>
+      <h3>TIS</h3>
+      <h3>MENT</h3>
+    </div>
+
+    <ul class="games-near-ad">
+      <% (24..35).to_a.each do |i|%>
+          <li class="game">
+            <a href="/game/index?game_name=<%= @games[i].name %>"><img src="/assets/<%= @games[i].name %>.jpg" alt=""></a>
+          </li>
+      <% end %>
+    </ul>
+<% end %>
