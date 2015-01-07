@@ -1,6 +1,6 @@
 <% if @render_left_arrow %>
     <div class="arrow">
-      <a href="?pageNumber=<%= @page_number - 1 %>"><img src="/assets/left_arrow.png" alt=""></a>
+      <a href="?pageNumber=<%= @page_number - 1 %><%= "&gameCategory=" + @game_category %>"><img src="/assets/left_arrow.png" alt=""></a>
     </div>
 <% else %>
   <div class="arrow">
@@ -11,16 +11,16 @@
 <ul>
   <% @page_quantity.times do |i| %>
     <% if @page_number == i + 1 %>
-        <li><a href="?pageNumber=<%= i + 1 %><%= @query_string_parameters %>"><div class="breadcrumb-btn-outside breadcrumb-btn-active"></div></a></li>
+        <li><a href="?pageNumber=<%= i + 1 %><%= "&gameCategory=" + @game_category %>"><div class="breadcrumb-btn-outside breadcrumb-btn-active"></div></a></li>
     <% else %>
-        <li><a href="?pageNumber=<%= i + 1 %><%= @query_string_parameters %>"><div class="breadcrumb-btn-outside"></div></a></li>
+        <li><a href="?pageNumber=<%= i + 1 %><%= "&gameCategory=" + @game_category%>"><div class="breadcrumb-btn-outside"></div></a></li>
     <% end %>
   <% end %>
 </ul>
 
 <% if @render_right_arrow %>
     <div class="arrow">
-      <a href="?pageNumber=<%= @page_number + 1 %>"><img src="/assets/right_arrow.png" alt=""></a>
+      <a href="?pageNumber=<%= @page_number + 1 %><%= "&gameCategory=" + @game_category %>"><img src="/assets/right_arrow.png" alt=""></a>
     </div>
 <% else %>
     <div class="arrow">

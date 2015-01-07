@@ -16,3 +16,16 @@ body {
     background: url('/assets/background_index.jpg') center center fixed no-repeat;
     background-size: cover;
 }
+
+.main-container {
+    margin-right: 180px;
+    margin-left: 180px;
+    background-color: #143A5F;
+    border-radius: 16px;
+    border-style: groove;
+    border-color: grey;
+    box-shadow: 0px 0px 50px #090909;
+    margin-top: -9px;
+    margin-bottom: -9px;
+    height: 100%;
+}

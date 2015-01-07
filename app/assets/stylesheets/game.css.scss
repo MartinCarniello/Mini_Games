@@ -1,3 +1,156 @@
 // Place all the styles related to the game controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.logo-game {
+  background-color: black;
+  color: white;
+  width: 20%;
+  height: 20%;
+  border-radius: 15px;
+  text-align: center;
+  margin-left: 15%;
+}
+
+.breadcrumb-game {
+  margin: 7% 5% 10% 5%;
+}
+
+.breadcrumb-game a + p {
+  display: inline;
+  margin: 0px 10px;
+}
+
+.breadcrumb-game a {
+  font-size: 140%;
+  text-decoration: none;
+}
+
+.breadcrumb-game a:visited {
+  color: #090d77;
+  text-decoration: none;
+}
+
+.breadcrumb-game a:hover {
+  color: red;
+  text-decoration: none;
+}
+
+.breadcrumb-game a:active {
+  color: #b00cff;
+  text-decoration: none;
+}
+
+.breadcrumb-game strong {
+  font-variant: small-caps;
+  font-size: 120%;
+}
+
+.game-name {
+  display: inline;
+  font-variant: small-caps;
+  color: #0a1223;
+}
+
+.game-name h1 {
+  font-weight: 10px;
+  font-size: 250%;
+  font-style: italic;
+  margin: 0 15%;
+}
+
+.stars-rating {
+  margin-left: 55%;
+  margin-right: 20%;
+  font-style: italic;
+  font-variant: small-caps;
+  color: white;
+  float: left;
+}
+
+.stars-rating h2 {
+  float: left;
+  position: relative;
+  top: 7px;
+}
+
+.starRating{
+  display: inline-block;
+  position: relative;
+  top: 30px;
+  left: 20px;
+  height: 24px;
+  background: url('stars.png') repeat-x 0 0;
+  vertical-align: bottom;
+}
+
+.starRating div{
+  float: left;
+  position: relative;
+  height: 24px;
+}
+
+.starRating input{
+  position: relative;
+  z-index: 1;
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+}
+
+.starRating label{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 24px;
+}
+
+.starRating span{
+  display: none;
+}
+
+.starRating       input:checked       + label,
+.starRating:hover input:checked:hover + label{
+  background: url('stars.png') repeat-x 0 -24px;
+}
+
+.starRating:hover input:checked + label{
+  background: transparent;
+}
+
+.starRating:hover input:hover + label{
+  background: url('stars.png') repeat-x 0 -48px;
+}
+
+.game-container {
+  margin: 3% 15%;
+  width: 70%;
+  height: 80%;
+}
+
+.flash-game {
+  width: 100%;
+  height: 80%;
+  padding: 0.5%;
+  border-style: groove;
+  border-color: grey;
+  border-radius: 5px;
+  box-shadow: 0px 0px 50px #090909;
+}
+
+.advertisment-in-game {
+  margin: 0 72%;
+  position: fixed;
+  top: 300px;
+  background-color: black;
+  color: white;
+  width: 40%;
+  height: 20%;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 10px 10px 5px #090909;
+  -webkit-transform:rotate(270deg);
+}

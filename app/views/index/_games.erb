@@ -3,7 +3,7 @@
         <ul>
           <% (0..@games.size - 1).to_a.each do |i|%>
               <li class="game">
-                <a href="/game/index?game_name=<%= @games[i].name %>"><img src="/assets/<%= @games[i].name %>.jpg" alt=""></a>
+                <a href="/game/index?game_name=<%= @games[i].name %><%= "&pageNumber=" + @page_number.to_s %><%= "&gameCategory=" + @game_category %>"><img src="/assets/<%= @games[i].name %>.jpg" alt=""></a>
               </li>
           <% end %>
         </ul>
@@ -13,7 +13,7 @@
         <ul>
             <% (0..23).to_a.each do |i|%>
                 <li class="game">
-                  <a href="/game/index?game_name=<%= @games[i].name %>"><img src="/assets/<%= @games[i].name %>.jpg" alt=""></a>
+                  <a href="/game/index?game_name=<%= @games[i].name %><%= "&pageNumber=" + @page_number.to_s %><%= "&gameCategory=" + @game_category %>"><img src="/assets/<%= @games[i].name %>.jpg" alt=""></a>
                 </li>
             <% end %>
         </ul>
@@ -29,7 +29,7 @@
     <ul class="games-near-ad">
       <% (24..35).to_a.each do |i|%>
           <li class="game">
-            <a href="/game/index?game_name=<%= @games[i].name %>"><img src="/assets/<%= @games[i].name %>.jpg" alt=""></a>
+            <a href="/game/index?game_name=<%= @games[i].name %><%= "&pageNumber=" + @page_number.to_s %><%= "&gameCategory=" + @game_category %>"><img src="/assets/<%= @games[i].name %>.jpg" alt=""></a>
           </li>
       <% end %>
     </ul>

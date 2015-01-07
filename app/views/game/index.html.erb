@@ -1,1 +1,33 @@
-<embed src="/assets/<%= @game.name -%>.swf" />
+<div class="main-container">
+    <div class="logo-game">
+        <h1>LOGO</h1>
+    </div>
+
+    <div class="advertising"><h1>ADVERTISMENT</h1></div>
+
+    <div class="breadcrumb-game">
+      <a href="/?pageNumber=<%= @page_number %>">Home</a>
+      <% if @game_category != "all" %>
+        <p>></p>
+        <a href="/?pageNumber=<%= @page_number %><%= "&gameCategory=" + @game_category %>">Juegos de <%= @game_category %></a>
+      <% end %>
+      <p>></p>
+      <strong><%= @game.name.split("_").collect { |word| word.capitalize }.join(" ") %></strong>
+    </div>
+
+    <div class="game-name">
+        <h1><%= @game.name.split("_").collect { |word| word.capitalize }.join(" ") %></h1>
+    </div>
+
+    <div class="stars-rating">
+      <%= render partial: "rating" %>
+    </div>
+
+    <div class="game-container">
+        <embed class="flash-game" src="/assets/<%= @game.name -%>.swf" />
+    </div>
+</div>
+
+<div class="advertisment-in-game">
+  <h1>ADVERTISMENT</h1>
+</div>
